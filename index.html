@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class=" search col">
+            <ul class="margin">
+                <li><img src="./images/Facebook-logo.png" alt="" class="logo"></li>
+                <li class="hide"><input value="Search Facebook" type="text" id="searchField"></li>
+            </ul>
+        </div>
+        <div class="functions col">
+            <ul>
+                <li>
+                    <img src="/images/home.png" alt="">
+                </li>
+                <li>
+                    <img src="/images/friends.png" alt="">
+                </li>
+                <li>
+                    <img src="/images/facebook.png" alt="">
+                </li>
+                <li>
+                    <img src="/images/people.png" alt="">
+                </li>
+                <li>
+                    <img src="/images/feeds icon.png" alt="">
+                </li>
+                <div class="line"></div>
+            </ul>
+        </div>
+        <div class="hide col">
+            <ul>
+                <img class="img" src="./images/dots-menu.png" alt="">
+                <img class="img" src="./images/messenger.png" alt="">
+                <img class="img" src="./images/bell.png" alt="">
+                <img class="img1" src="./images/profile-modified.png" alt="">
+            </ul>
+        </div>
+    </div>
+    <div class="story-reels-rooms">
+        <div class="story">
+            <div class="func">
+                <button value="input"><i class="material-icons">input</i><a>Stories</a></button>
+                <button><i class="material-icons">movie_filter</i><a>Reels</a></button>
+                <button><i class="material-icons">shop_two</i><a>Rooms</a></button>
+                <hr>
+                <div class="line1"></div>
+            </div>
+            <div class="slider">
+                <ul>
+                    <li class="box">
+                        <img src="./images/profile.jpg" alt="">
+                        <div class="circle">
+                            <i class="fa fa-plus-circle "></i>
+                        </div>
+                        <a>Create Story</a>
+                    </li>
+                    <li class="box">
+                        <img src="./images/pak.jpeg" alt="">
+                        <div class="circle1"></div>
+                        <a>Geo super</a>
+                    </li>
+                    <li class="box">
+                        <img src="./images/cloud.jpg" alt="">
+                        <div class="circle1"></div>
+                        <a class="fontSize">Weather update</a>
+                    </li>
+                    <li class="box">
+                        <img src="./images/ssuet.jpeg" alt="">
+                        <div class="circle1"></div>
+                        <div class="circle2"><i class="fa fa-angle-left"></i></div>
+                        <a class="fontSize">Sir Syed University</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="post">
+        <div class="first-post">
+            <img src="./images/profile-modified.png" alt="">
+            <input onclick="clic()" placeholder="What's on your mind, Abdul Basit?" type="text" name="" id="" readonly>
+        </div>
+        <hr>
+        <div class="func1">
+            <button value="input">
+                <i style="color: red; font-size: 26px;" class="fa fa-video-camera"></i>
+                <p>Live video</p>
+            </button>
+            <button>
+                <i style="color: rgb(86, 137, 10);" class="material-icons">collections</i>
+                <p>Photo/video</p>
+            </button>
+            <button>
+                <i style="color: orange;" class="material-icons">mood</i>
+                <p>Feeling/activity</p>
+            </button>
+        </div>
+    </div>
+
+    <!-- pop up window -->
+    <div id="createPost" class="create-post">
+        <div>
+            <br>
+            <p>Create post</p>
+            <i onclick="clo()" class="fa fa-close"></i>
+            <br>
+            <hr>
+        </div>
+        <div class="post-img">
+            <ul>
+                <li>
+                    <img src="./images/profile-modified.png" alt="">
+                </li>
+                <li>
+                    <p>Abdul Basit</p>
+                    <button><i class="fa fa-globe"></i>&nbsp public<i class="arrow down"></i></button>
+                </li>
+            </ul>
+        </div>
+        <div id="create-post-text" class="create-post-text">
+            <textarea class="textarea" placeholder="What's on your mind, Abdul Basit?" name="" id="textArea" cols="30"
+                rows="10"></textarea>
+        </div>
+        <div id="bg" class="background">
+            <img onclick="bg()" src="./images/theme.svg" alt="">
+        </div>
+        <div class="theme">
+            <p style="font-size: 15px;">Add to your post</p>
+            <ul>
+                <li><img src="./images/gallery.svg" alt=""></li>
+                <li><img src="./images/tag.svg" alt=""></li>
+                <li><img src="./images/emoji.svg" alt=""></li>
+                <li><img src="./images/mic.svg" alt=""></li>
+                <li><img src="./images/more.svg" alt=""></li>
+            </ul>
+        </div>
+        <button onclick="post()" class="post-button">Post</button>
+    </div>
+    <div id="post1">
+        
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>
